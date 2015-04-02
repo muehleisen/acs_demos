@@ -1,0 +1,15 @@
+;SRC.LOC
+;CATT-Acoustic v8.0 Manual Shoebox Example
+
+;SRC.LOC
+LOCAL src_z = 1.7
+
+SOURCEDEFS
+ A0  1.0 1.7 src_z  OMNI 1.0  3.7 src_z
+ Lp1m_a = <70 73 76 79 82 95>
+
+ A1  2.0 1.7 src_z  OMNI 1.0  3.7 src_z
+ Lp1m_a = <70 73 76 79 82 95>
+
+ A2  -1.0 1.7 src_z  OMNI 1.0  3.7 src_z
+ Lp1m_a = <70 73 76 79 82 95>

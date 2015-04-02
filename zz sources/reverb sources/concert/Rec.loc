@@ -1,0 +1,30 @@
+;REC.LOC
+;PROJECT:CATT-Acoustic tutorial for v8.0
+
+   LOCAL dx = 2.2
+   LOCAL dy = 3
+   LOCAL y0 = fld+1
+
+
+RECEIVERS
+   1  -2*dx y0       lock(23 24 25)
+   2  -1*dx y0       lock(23 24 25)
+   3   0*dx y0       lock(23 24 25)
+   4   1*dx y0       lock(23 24 25)
+   5   2*dx y0       lock(23 24 25)
+  11  -2*dx y0+dy    lock(23 24 25)
+  12  -1*dx y0+dy    lock(23 24 25)
+  13   0*dx y0+dy    lock(23 24 25)
+  14   1*dx y0+dy    lock(23 24 25)
+  15   2*dx y0+dy    lock(23 24 25)
+  21  -2*dx y0+2*dy  lock(23 24 25)
+  22  -1*dx y0+2*dy  lock(23 24 25)
+  23   0*dx y0+2*dy  lock(23 24 25)
+  24   1*dx y0+2*dy  lock(23 24 25)
+  25   2*dx y0+2*dy  lock(23 24 25)
+  31  -2*dx y0+3*dy  lock(23 24 25)
+  32  -1*dx y0+3*dy  lock(23 24 25)
+  33   0*dx y0+3*dy  lock(23 24 25)
+  34   1*dx y0+3*dy  lock(23 24 25)
+  35   2*dx y0+3*dy  lock(23 24 25)
+

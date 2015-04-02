@@ -1,0 +1,6 @@
+;GEO-file template for AniScape
+;Created by CATT PureVerb v3.2c
+SOURCEDEFS
+;Mono source
+ A0   0   1   9 OMNI   0  0  0
+ Lp1m_a = <85 88 91 94 97 100>

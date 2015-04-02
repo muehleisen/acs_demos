@@ -1,0 +1,7 @@
+;PROJECT=Diffuse Empty Classroom
+SOURCEDEFS
+
+; Lw = 84.6 96.7 98.2 97.1 99.7 99.0
+;id   position    directivity  aim-position [roll]
+ A0  2 3 1.8     OMNI      0.0 0.0 0.0
+ Lp1m_a   = <73.8 85.9 87.4 86.3 88.9 88.2>

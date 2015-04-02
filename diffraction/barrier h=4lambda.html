@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<title>barrier h=4lambda.mph</title>
+<STYLE TYPE="text/css">
+P { font-family:helvetica }
+H1 { font-family:helvetica;font-size:large;color:darkred }
+H2 { font-family:helvetica;font-size:large;color:darkblue }
+H3 { font-family:helvetica;color:black }
+H4 { font-family:helvetica;color:black }
+BODY { background:white }
+TABLE { border-collapse: collapse;border=solid;border-width=medium }
+TD { padding-left:4px;padding-right:2px;font-family:helvetica;border=solid;border-width=1px }
+LI { font-family:helvetica }
+</STYLE>
+<meta name="description" content="FEMLAB report">
+<meta name="keywords" content="pde femlab fem fea multiphysics comsol">
+</head>
+<body>
+<a href="http://www.comsol.com"><img src="barrier h=4lambda_rep/Comsol_model_report.png" alt="COMSOL Multiphysics - Multiphysics Modeling" border=0></a>
+<p><font face="Helvetica" size="+2">COMSOL Model Report</font></p>
+<a href="#post"><img src="barrier h=4lambda_rep/post.png" alt="Go to the postprocessing section" border=0></a>
+<H1><a name="toc">1. Table of Contents</a></H1>
+<ul><li>Title - COMSOL Model Report<li>Table of Contents<li>Model Properties<li>Constants<li>Global Expressions<li>Geometry<li>Geom1<li>Solver Settings<li>Postprocessing<li>Variables</ul>
+<H1><a name="modelprop">2. Model Properties</a></H1>
+<table border="1">
+<tr valign=top><td><b>Property</b></td><td><b>Value</b></td></tr>
+<tr valign=top><td>Model name</td><td>&nbsp;</td></tr>
+<tr valign=top><td>Author</td><td>&nbsp;</td></tr>
+<tr valign=top><td>Company</td><td>&nbsp;</td></tr>
+<tr valign=top><td>Department</td><td>&nbsp;</td></tr>
+<tr valign=top><td>Reference</td><td>&nbsp;</td></tr>
+<tr valign=top><td>URL</td><td>&nbsp;</td></tr>
+<tr valign=top><td>Saved date</td><td>Nov 19, 2006 12:35:21 AM</td></tr>
+<tr valign=top><td>Creation date</td><td>Nov 17, 2006 4:07:23 PM</td></tr>
+<tr valign=top><td>COMSOL version</td><td>COMSOL 3.3.0.405</td></tr>
+</table><p>
+
+<p>File name: D:\research\ASA Talks\f06\animations\visualizations\diffraction\barrier h=4lambda.mph</p>
+<p>Application modes and modules used in this model:</p>
+<ul><li>Geom1 (2D)<ul><li>Pressure Acoustics (Acoustics Module)</ul></ul>
+<H1><a name="const">3. Constants</a></H1>
+<table border="1">
+<tr valign=top><td><b>Name</b></td><td><b>Expression</b></td><td><b>Value</b></td><td><b>Description</b></td></tr>
+<tr valign=top><td>f0</td><td>100</td><td>&nbsp;</td><td>frequency</td></tr>
+<tr valign=top><td>x0</td><td>2</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr valign=top><td>y0</td><td>2</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr valign=top><td>c0</td><td>200</td><td>&nbsp;</td><td>speed of sound m/s</td></tr>
+<tr valign=top><td>rho0</td><td>1.21</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr valign=top><td>p0</td><td>1</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr valign=top><td>t0</td><td>1/f0</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr valign=top><td>lambda0</td><td>c0/f0</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+<tr valign=top><td>h0</td><td>8</td><td>&nbsp;</td><td>height of barrier</td></tr>
+<tr valign=top><td>hol</td><td>h0/lambda0</td><td>&nbsp;</td><td>ratio of height to lambda</td></tr>
+</table><p>
+
+<H1><a name="globalexpr">4. Global Expressions</a></H1>
+<table border="1">
+<tr valign=top><td><b>Name</b></td><td><b>Expression</b></td><td><b>Description</b></td></tr>
+<tr valign=top><td>gt</td><td>(t<2*t0)*(-8*pi^2*f0^2*(t-t0)*exp(-pi^2*f0^2*(t-t0)^2))</td><td>gaussian source</td><td>&nbsp;</td></tr>
+<tr valign=top><td>gts</td><td>sin(2*pi*f0*t)</td><td>sinusoidal source</td><td>&nbsp;</td></tr>
+<tr valign=top><td>gtc</td><td>cos(2*pi*f0*t)</td><td>cosine source</td><td>&nbsp;</td></tr>
+</table><p>
+
+<H1><a name="geometry">5. Geometry</a></H1>
+<p>Number of geometries: 1</p>
+<H2><a name="geometry_section0">5.1. Geom1</a></H2>
+<img src="barrier h=4lambda_rep/geometry_section0.png" alt="geometry_section0">
+<H3><a name="geometry_section0_0">5.1.1. Point mode</a></H3>
+<img src="barrier h=4lambda_rep/geometry_section0_0_img.png" alt="geometry_section0_0_img">
+<H3><a name="geometry_section0_1">5.1.2. Boundary mode</a></H3>
+<img src="barrier h=4lambda_rep/geometry_section0_1_img.png" alt="geometry_section0_1_img">
+<H3><a name="geometry_section0_2">5.1.3. Subdomain mode</a></H3>
+<img src="barrier h=4lambda_rep/geometry_section0_2_img.png" alt="geometry_section0_2_img">
+<H1><a name="model_Geom1">6. Geom1</a></H1>
+<p>Space dimensions: 2D</p>
+<p>Independent variables: x, y, z</p>
+<H2><a name="mesh">6.1. Mesh</a></H2>
+<H3><a name="mesh_stats">6.1.1. Mesh Statistics</a></H3>
+<table border="1">
+<tr valign=top><td>Number of degrees of freedom</td><td>14816</td></tr>
+<tr valign=top><td>Number of mesh points</td><td>3758</td></tr>
+<tr valign=top><td>Number of elements</td><td>7300</td></tr>
+<tr valign=top><td>Triangular</td><td>7300</td></tr>
+<tr valign=top><td>Quadrilateral</td><td>0</td></tr>
+<tr valign=top><td>Number of boundary elements</td><td>216</td></tr>
+<tr valign=top><td>Number of vertex elements</td><td>12</td></tr>
+<tr valign=top><td>Minimum element quality</td><td>0.701</td></tr>
+<tr valign=top><td>Element area ratio</td><td>0.001</td></tr>
+</table><p>
+
+<img src="barrier h=4lambda_rep/mesh_section_0_0.png" alt="mesh_section_0_0">
+<H2><a name="appmode_acpr">6.2. Application Mode: Pressure Acoustics (acpr)</a></H2>
+<p>Application mode type: Pressure Acoustics (Acoustics Module)</p>
+<p>Application mode name: acpr</p>
+<H3><a name="appmode_acpr_scalarvariables">6.2.1. Scalar Variables</a></H3>
+<table border="1">
+<tr valign=top><td>Name</td><td>Variable</td><td>Value</td><td>Description</td></tr>
+<tr valign=top><td>p_i</td><td>p_i_acpr</td><td>exp(-1/2*(t-x/cs_acpr)^2/0.01^2)</td><td>Incident pressure wave</td></tr>
+<tr valign=top><td>p_ref</td><td>p_ref_acpr</td><td>20e-6</td><td>Pressure reference</td></tr>
+</table><p>
+
+<H3><a name="properties_acpr">6.2.2. Application Mode Properties</a></H3>
+<table border="1">
+<tr valign=top><td><b>Property</b></td><td><b>Value</b></td></tr>
+<tr valign=top><td>Default element type</td><td>Lagrange - Quadratic</td></tr>
+<tr valign=top><td>Analysis type</td><td>Transient</td></tr>
+<tr valign=top><td>Damping</td><td>Off</td></tr>
+<tr valign=top><td>Specify eigenvalues using</td><td>Eigenfrequency</td></tr>
+<tr valign=top><td>Solve for</td><td>Total wave</td></tr>
+<tr valign=top><td>Symmetry plane x=0</td><td>Off</td></tr>
+<tr valign=top><td>Symmetry type for x=0</td><td>Symmetry</td></tr>
+<tr valign=top><td>Symmetry plane y=0</td><td>Off</td></tr>
+<tr valign=top><td>Symmetry type for y=0</td><td>Symmetry</td></tr>
+<tr valign=top><td>Frame</td><td>Frame (ref)</td></tr>
+<tr valign=top><td>Weak constraints</td><td>Off</td></tr>
+</table><p>
+
+<H3><a name="appmode_acpr_variables">6.2.3. Variables</a></H3>
+<p>Dependent variables: p</p>
+<p>Shape functions: shlag(2,'p')</p>
+<p>Interior boundaries not active</p>
+<H3><a name="Boundary_settings_acpr">6.2.4. Boundary Settings</a></H3>
+<table border="1">
+<tr valign=top><td>Boundary</td><td>&nbsp;</td><td>1, 3</td><td>2</td></tr>
+<tr valign=top><td>Type</td><td>&nbsp;</td><td>Radiation condition</td><td>Radiation condition</td></tr>
+<tr valign=top><td>Pressure source (p0)</td><td>Pa</td><td>0</td><td>0</td></tr>
+<tr valign=top><td>Inward acceleration (nacc)</td><td>m/s<sup>2</sup></td><td>0</td><td>0</td></tr>
+<tr valign=top><td>Source location, x coordinate (x0)</td><td>m</td><td><b>2</b></td><td><b>2</b></td></tr>
+<tr valign=top><td>Source location, y coordinate (y0)</td><td>m</td><td><b>2</b></td><td><b>24</b></td></tr>
+<tr valign=top><td>wavetype</td><td>1</td><td>PL</td><td><b>CYL</b></td></tr>
+</table><p>
+
+<table border="1">
+<tr valign=top><td>Boundary</td><td>4-6</td><td>7</td><td>8</td></tr>
+<tr valign=top><td>Type</td><td>Sound hard boundary (wall)</td><td>Radiation condition</td><td>Radiation condition</td></tr>
+<tr valign=top><td>Pressure source (p0)</td><td>0</td><td>0</td><td>0</td></tr>
+<tr valign=top><td>Inward acceleration (nacc)</td><td>0</td><td>0</td><td>0</td></tr>
+<tr valign=top><td>Source location, x coordinate (x0)</td><td><b>4</b></td><td><b>17</b></td><td><b>4</b></td></tr>
+<tr valign=top><td>Source location, y coordinate (y0)</td><td><b>4</b></td><td><b>8</b></td><td><b>4</b></td></tr>
+<tr valign=top><td>wavetype</td><td><b>CYL</b></td><td><b>CYL</b></td><td>PL</td></tr>
+</table><p>
+
+<table border="1">
+<tr valign=top><td>Boundary</td><td>9-12</td></tr>
+<tr valign=top><td>Type</td><td>Normal acceleration</td></tr>
+<tr valign=top><td>Pressure source (p0)</td><td><b>10*cos(2*pi*f0*t)</b></td></tr>
+<tr valign=top><td>Inward acceleration (nacc)</td><td><b>1*cos(2*pi*f0*t)</b></td></tr>
+<tr valign=top><td>Source location, x coordinate (x0)</td><td>0</td></tr>
+<tr valign=top><td>Source location, y coordinate (y0)</td><td>0</td></tr>
+<tr valign=top><td>wavetype</td><td>PL</td></tr>
+</table><p>
+
+<H3><a name="subdomain_settings_acpr">6.2.5. Subdomain Settings</a></H3>
+<table border="1">
+<tr valign=top><td>Subdomain</td><td>&nbsp;</td><td>1</td></tr>
+<tr valign=top><td>Fluid density (rho)</td><td>kg/m<sup>3</sup></td><td><b>rho0</b></td></tr>
+<tr valign=top><td>Speed of sound (cs)</td><td>m/s</td><td><b>c0</b></td></tr>
+</table><p>
+
+<H1><a name="solver">7. Solver Settings</a></H1>
+<p>Solve using a script: off</p>
+<table border="1">
+<tr valign=top><td>Analysis type</td><td>Transient</td></tr>
+<tr valign=top><td>Auto select solver</td><td>On</td></tr>
+<tr valign=top><td>Solver</td><td>Time dependent</td></tr>
+<tr valign=top><td>Solution form</td><td>Automatic</td></tr>
+<tr valign=top><td>Symmetric</td><td>auto</td></tr>
+<tr valign=top><td>Adaption</td><td>Off</td></tr>
+</table><p>
+
+<H2><a name="solver_name">7.1. Direct (UMFPACK)</a></H2>
+<p>Solver type: Linear system solver</p>
+<table border="1">
+<tr valign=top><td><b>Parameter</b></td><td><b>Value</b></td></tr>
+<tr valign=top><td>Pivot threshold</td><td>0.1</td></tr>
+<tr valign=top><td>Memory allocation factor</td><td>0.7</td></tr>
+</table><p>
+
+<H2><a name="solver_timestepping">7.2. Time Stepping</a></H2>
+<table border="1">
+<tr valign=top><td><b>Parameter</b></td><td><b>Value</b></td></tr>
+<tr valign=top><td>Times</td><td>0:0.005:0.25</td></tr>
+<tr valign=top><td>Relative tolerance</td><td>0.01</td></tr>
+<tr valign=top><td>Absolute tolerance</td><td>0.0010</td></tr>
+<tr valign=top><td>Times to store in output</td><td>Specified times</td></tr>
+<tr valign=top><td>Time steps taken by solver</td><td>Free</td></tr>
+<tr valign=top><td>Manual tuning of step size</td><td>Off</td></tr>
+<tr valign=top><td>Initial time step</td><td>1E-3</td></tr>
+<tr valign=top><td>Maximum time step</td><td>1E-3</td></tr>
+<tr valign=top><td>Maximum BDF order</td><td>2</td></tr>
+<tr valign=top><td>Singular mass matrix</td><td>Maybe</td></tr>
+<tr valign=top><td>Consistent initialization of DAE systems</td><td>Backward Euler</td></tr>
+<tr valign=top><td>Error estimation strategy</td><td>Include algebraic</td></tr>
+<tr valign=top><td>Allow complex numbers</td><td>Off</td></tr>
+</table><p>
+
+<H2><a name="solver_advanced">7.3. Advanced</a></H2>
+<table border="1">
+<tr valign=top><td><b>Parameter</b></td><td><b>Value</b></td></tr>
+<tr valign=top><td>Constraint handling method</td><td>Elimination</td></tr>
+<tr valign=top><td>Null-space function</td><td>Automatic</td></tr>
+<tr valign=top><td>Assembly block size</td><td>5000</td></tr>
+<tr valign=top><td>Use Hermitian transpose of constraint matrix and in symmetry detection</td><td>Off</td></tr>
+<tr valign=top><td>Use complex functions with real input</td><td>Off</td></tr>
+<tr valign=top><td>Stop if error due to undefined operation</td><td>On</td></tr>
+<tr valign=top><td>Type of scaling</td><td>Automatic</td></tr>
+<tr valign=top><td>Manual scaling</td><td>&nbsp;</td></tr>
+<tr valign=top><td>Row equilibration</td><td>On</td></tr>
+<tr valign=top><td>Manual control of reassembly</td><td>Off</td></tr>
+<tr valign=top><td>Load constant</td><td>On</td></tr>
+<tr valign=top><td>Constraint constant</td><td>On</td></tr>
+<tr valign=top><td>Mass constant</td><td>On</td></tr>
+<tr valign=top><td>Damping (mass) constant</td><td>On</td></tr>
+<tr valign=top><td>Jacobian constant</td><td>On</td></tr>
+<tr valign=top><td>Constraint Jacobian constant</td><td>On</td></tr>
+</table><p>
+
+<H1><a name="post">8. Postprocessing</a></H1>
+<img src="barrier h=4lambda_rep/post_0.png" alt="post_0">
+<H1><a name="variables">9. Variables</a></H1>
+<H2><a name="variables_0">9.1. Point</a></H2>
+<table border="1">
+<tr valign=top><td><b>Name</b></td><td><b>Description</b></td><td><b>Expression</b></td></tr>
+<tr valign=top><td>Lp_acpr</td><td>Sound pressure level</td><td>10 * log10(0.5 * p_t_acpr * conj(p_t_acpr)/p_ref_acpr^2)</td></tr>
+<tr valign=top><td>Lp_s_acpr</td><td>Scattered sound pressure level</td><td>10 * log10(0.5 * p_s_acpr * conj(p_s_acpr)/p_ref_acpr^2)</td></tr>
+<tr valign=top><td>p_t_acpr</td><td>Total acoustic pressure</td><td>p</td></tr>
+<tr valign=top><td>p_s_acpr</td><td>Scattered pressure wave</td><td>p-p_i_acpr</td></tr>
+</table><p>
+
+<H2><a name="variables_1">9.2. Boundary</a></H2>
+<table border="1">
+<tr valign=top><td><b>Name</b></td><td><b>Description</b></td><td><b>Expression</b></td></tr>
+<tr valign=top><td>na_acpr</td><td>Normal acceleration</td><td>nx_acpr * ax_acpr+ny_acpr * ay_acpr</td></tr>
+<tr valign=top><td>nk_acpr</td><td>Scalar product between n and kdir</td><td>(kdirx_acpr * nx_acpr+kdiry_acpr * ny_acpr)/sqrt(kdirx_acpr^2+kdiry_acpr^2)</td></tr>
+</table><p>
+
+<H2><a name="variables_2">9.3. Subdomain</a></H2>
+<table border="1">
+<tr valign=top><td><b>Name</b></td><td><b>Description</b></td><td><b>Expression</b></td></tr>
+<tr valign=top><td>ax_acpr</td><td>Local acceleration, x component</td><td>-(px-qx_acpr)/rho_acpr</td></tr>
+<tr valign=top><td>ay_acpr</td><td>Local acceleration, y component</td><td>-(py-qy_acpr)/rho_acpr</td></tr>
+<tr valign=top><td>Lp_acpr</td><td>Sound pressure level</td><td>10 * log10(0.5 * p_t_acpr * conj(p_t_acpr)/p_ref_acpr^2)</td></tr>
+<tr valign=top><td>Lp_s_acpr</td><td>Scattered sound pressure level</td><td>10 * log10(0.5 * p_s_acpr * conj(p_s_acpr)/p_ref_acpr^2)</td></tr>
+<tr valign=top><td>p_t_acpr</td><td>Total acoustic pressure</td><td>p</td></tr>
+<tr valign=top><td>p_s_acpr</td><td>Scattered pressure wave</td><td>p-p_i_acpr</td></tr>
+<tr valign=top><td>norma_acpr</td><td>Local acceleration, norm</td><td>sqrt(abs(ax_acpr)^2+abs(ay_acpr)^2)</td></tr>
+<tr valign=top><td>normq_acpr</td><td>Dipole source, norm</td><td>sqrt(abs(qx_acpr)^2+abs(qy_acpr)^2)</td></tr>
+</table><p>
+
+</body>
+</html>

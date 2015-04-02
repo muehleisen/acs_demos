@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+
+
+
+
+
+  <title>Noise and Tone Comparison Demo</title>
+  <link rel="StyleSheet" href="../style.css" type="text/css">
+</head>
+
+
+<body>
+
+
+<body alink="black" link="black" vlink="black">
+<ul id="tabmenu">
+  <li><a href="../acs_demos.html">Home</a></li>
+  <li><a href="../diffraction/diffraction.html">Diffraction</a></li>
+  <li><a href="../wave_animations/wave_animations.html">Waves</a></li>
+
+  <li><a href="../room_modes/room_modes.html">Room Modes</a></li>
+    <li><a href="../reverb_demo/reverb_demo.html">Reverb Time</a></li>
+  <li><a href="../TL_demo/tl.html">Transmission</a></li>
+  <li><a class="active" href="../noise_demo/noise_demo.html">Noise</a></li>
+  <li><a href="../classroom/classroom.html">Classroom</a> </li>
+  <li><a href="../hearing_loss/hearing_loss.html">Hearing Loss</a> </li> 
+</ul>
+
+
+<div id="content">
+<h1 style="text-align: center;">Noise and Tone Demos</h1>
+
+
+<span style="font-family: Verdana,Arial,Helvetica,sans-serif;">Below
+are two sounds with the
+same octave band spectra, but differing 1/3 octave and narrowband
+spectra.<br>
+
+
+This shows how comparing sounds by their octave band spectra can be
+deceiving</span><br>
+
+
+<h3>Click the figures below to hear the sound that created each
+spectrum</h3>
+
+
+<table style="text-align: left; width: 100%;" border="1" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+
+
+    <tr>
+
+
+      <td style="font-family: Helvetica,Arial,sans-serif; text-align: center;">
+
+      <h1>Pink Noise Spectra</h1>
+
+
+      </td>
+
+
+      <td style="font-family: Helvetica,Arial,sans-serif; text-align: center;">
+
+      <h1>Tonal Noise Spectra</h1>
+
+
+      </td>
+
+
+    </tr>
+
+
+    <tr>
+
+
+      <td><a href="pinknoise-3s.mp3"><img style="border: 0px solid ; width: 480px; height: 355px;" alt="pink noise spectrum" src="noise_spectrum.gif"></a><a href="pinknoise-3s.wav"><br>
+
+
+      </a></td>
+
+
+      <td><a href="tonemix.mp3"><img style="border: 0px solid ; width: 480px; height: 355px;" alt="tonal noise spectrum" src="tonal_spectrum.gif"></a><a href="pinknoise.wav"><br>
+
+
+      </a></td>
+
+
+    </tr>
+
+
+
+  </tbody>
+</table>
+
+
+<br>
+
+
+Below are three types of noise: white, pink, and brown. &nbsp;Click
+on the noise name to hear a sample of the noise<br>
+
+
+<table style="text-align: left; width: 1000px; height: 40px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+
+
+    <tr>
+
+
+      <td>
+
+      <div id="buttonA">
+
+      <ul>
+
+
+        <li><a href="whitenoise-3s.mp3">White Noise</a></li>
+
+
+
+      </ul>
+
+
+      </div>
+
+
+      </td>
+
+
+      <td>White
+noise has a flat
+narrowband
+spectrum but a octave and 1/3 octave band spectrum that rises 3
+dB/octave. This sounds quite hissy</td>
+
+
+    </tr>
+
+
+
+  </tbody>
+</table>
+
+
+<br>
+
+
+<table style="text-align: left; width: 1000px; height: 36px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+
+
+    <tr>
+
+
+      <td>
+
+      <div id="buttonA">
+
+      <ul>
+
+
+        <li><a href="pinknoise-3s.mp3">Pink Noise</a></li>
+
+
+
+      </ul>
+
+
+      </div>
+
+
+      </td>
+
+
+      <td>Pink noise (aka 1/f noise) has a
+narroband
+spectrum that drops 3 dB/octave and a flat&nbsp; octave and 1/3
+octave
+band spectrum. &nbsp;This has less hiss and more roary.</td>
+
+
+    </tr>
+
+
+
+  </tbody>
+</table>
+
+
+<br>
+
+
+<table style="text-align: left; width: 1000px; height: 36px;" border="0" cellpadding="2" cellspacing="2">
+
+
+  <tbody>
+
+
+    <tr>
+
+
+      <td>
+
+      <div id="buttonA">
+
+      <ul>
+
+
+        <li><a href="brownnoise-3s.mp3">Brown Noise</a></li>
+
+
+
+      </ul>
+
+
+      </div>
+
+
+      </td>
+
+
+      <td> Brown noise (aka 1/f<sup>2</sup> noise)
+has a
+narrowband spectrum &nbsp;that drops by 6 dB/octave and an band
+spectrum that
+drops at 3 dB/oct. &nbsp;This is very roary. &nbsp;Because of
+the low frequency content it sounds quieter than the white and pink
+noise despite being of higher maximum amplitude.</td>
+
+
+    </tr>
+
+
+
+  </tbody>
+</table>
+
+
+<br>
+These noises and plots were created using MATLAB. &nbsp;Random noise
+was generated to create the white noise source and the white noise was
+filtered to obtain pink and brown noise. &nbsp;The 1/3 and octave band
+spectra were obtained using the <a href="http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?objectId=69&amp;objectType=file">octave filter toolbox</a> available from the MATLAB File Exchange<br>
+Files were converted from .wav to high quality variable bitrate MP3 because of limited space on the web server.
+
+<br>
+
+<table>
+<tr>
+	<td>
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">
+		<img alt="Creative Commons License" style="border-width: 0" src="http://i.creativecommons.org/l/by-nc/2.5/88x31.png"/></a>
+	</td>
+	<td>
+		<div  id="links"> These animations, auralizations, and visualizations are © 2006 by 
+		Ralph T. Muehleisen and are licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">
+		Creative Commons Attribution-NonCommercial 2.5  License</a>.
+	</td>
+	</tr>
+</table>
+<!--/Creative Commons License--><!-- 
+<rdf:RDF xmlns="http://web.resource.org/cc/" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<Work rdf:about="">
+	<license rdf:resource="http://creativecommons.org/licenses/by-nc/2.5/" />
+	<dc:type rdf:resource="http://purl.org/dc/dcmitype/Sound" />
+	</Work>
+	<License rdf:about="http://creativecommons.org/licenses/by-nc/2.5/">
+	<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+	<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+	<requires rdf:resource="http://web.resource.org/cc/Notice"/>
+	<requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+	<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/>
+	<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+	</License></rdf:RDF> -->
+<!--Creative Commons License-->
+
+
+</div>
+
+
+</body>
+</html>

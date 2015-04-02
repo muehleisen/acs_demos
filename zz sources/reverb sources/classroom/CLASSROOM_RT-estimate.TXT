@@ -1,0 +1,26 @@
+Settings = d:\research\ASA Talks\f06\animations\reverb_demo\source\concert\CATT.PRD
+PROJECT  = -
+MASTER   = CLASSROOM.GEO
+
+The estimated RTs become:
+
+            125   250   500   1k    2k    4k 
+------------------------------------------------------------------------
+Eyring :   0.47  0.34  0.29  0.26  0.22  0.20 s
+Sabine :   0.54  0.41  0.36  0.33  0.29  0.28 s
+------------------------------------------------------------------------
+<Abs>  :   25.5  33.4  37.5  41.1  45.9  47.7 %
+Volume : 278.2   <Free path> :  3.42 m
+------------------------------------------------------------------------
+Schröder frequency:  82 Hz
+-> Geometrical acoustics estimated from band : 250 Hz
+------------------------------------------------------------------------
+
+WARNING: The Sabine or Eyring RT may differ considerably from actual
+RT and T-30. It depends on the absorption/diffusion distribution and
+if the hall shape is 'mixing' or not. Always compare the Sabine/Eyring
+values to the T-30 values (also from 'Full detailed calculation').
+Note that the model has to be constructed according to guide-lines
+or Volume and <Abs> will be in error and  thereby also the Sabine
+and Eyring RT values above.
+

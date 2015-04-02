@@ -1,0 +1,25 @@
+;SRC.LOC
+;PROJECT:CATT-Acoustic tutorial for v8.0
+
+SOURCEDEFS
+
+IF step < 5 THEN
+
+   A0  0.0 3.0 2.0  OMNI  0.0 10.0 3.0  
+   Lp1m_a = <70 73 76 79 82 85>
+
+   B0  1.0 2.0 2.0  OMNI  0.0 10.0 3.0  
+   Lp1m_a = <70 73 76 79 82 85>
+
+ENDIF
+
+IF step >= 5 THEN
+
+   A0  -2.5 fsd-0.5 sh+1.7 OMNI -2.0 fsd+2 sh+1.7 
+   Lp1m_a = <70 73 76 79 82 85>
+
+   B0   1.0 fsd-2.0 sh+1.7 OMNI  1.0 fsd+2 sh+1.7 
+   Lp1m_a = <70 73 76 79 82 85>
+
+ENDIF
+

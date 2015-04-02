@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>Cathedral Description</title>
+
+   <link rel="StyleSheet" href="../style.css" type="text/css">
+  <meta content="Ralph T. Muehleisen" name="author">
+</head>
+
+
+<body alink="black" link="black" vlink="black">
+
+<ul id="tabmenu">
+  <li><a href="../acs_demos.html">Home</a></li>
+  <li><a href="../diffraction/diffraction.html">Diffraction</a></li>
+  <li><a href="../wave_animations/wave_animations.html">Waves</a></li>
+  <li><a href="../room_modes/room_modes.html">Room Modes</a></li>
+ <li><a class="active" href="../reverb_demo/reverb_demo.html">Reverb Time</a></li>
+  <li><a href="../TL_demo/tl.html">Transmission</a></li>
+  <li><a href="../noise_demo/noise_demo.html">Noise</a></li>
+  <li><a href="../classroom/classroom.html">Classroom</a><li>
+  <li><a href="../hearing_loss/hearing_loss.html">Hearing Loss</a> </li>
+</ul>
+<div id="content" style="font: 15px arial, sans-serif;">
+
+<h1 style="font-family: Helvetica,Arial,sans-serif; text-align: center;">Cathedral
+Description</h1>
+
+A cathedral is a room designed for housing a large number of people for religous worship. &nbsp;
+Cathedrals typically have very high ceilings which result in extremely high room volumes for a given
+floor area.  &nbsp;When this large volume is combined with the fact that most cathedrals have
+very hard surfaces such as wood, stone, and concrete, most cathedrals have very long reverberation
+times.&nbsp  The long reverberation times are utilized by composers of organ, choir, and chant
+to enhance the experience.  In particular, composers can utilize the reverberation to act as additional
+instrument with organists, singers, or chanters doubling and tripling particular notes to create 
+new harmonic sequences.&nbsp;<br>&nbsp;<br>
+
+For these simulations a cathedral with a classic&nbsp; with &nbsp;basic nave dimensions of 50 m x 20 m x 25 m
+high with transcepts extending another 10 m from the nave at a height of 15 m as shown in the figure below<br>
+
+<img style="width: 643px; height: 386px;" alt="Cathedral  Geometry" src="cathedral_view4.GIF"><br>
+
+<br>
+
+<h2>Reverberation Time</h2>
+
+<br>
+
+The reverberation time (RT) in each of the six octave bands from 125 Hz
+to 4 kHz. &nbsp;The estimated RT computed using the Sabine equation
+(circles) and Eyring equation (diamonds) equations is plotted along
+with the estimated reverberation time computed using ray tracing from
+4*T-15 and 2*T-30 (up and down triangles). &nbsp;T-15 is the
+computed time for the sound energy level to drop by 15 dB from th
+einitial energy level and T-30 is the time for the sound energy level
+to drop from -5 dB to -35 dB from the initial energy level.<br>
+
+<br>
+As one can see, the low frequency&nbsp; reverberation time exceeds 7
+seconds, dropping at higher frequencies because of absorption of the
+pews and the air itself. &nbsp;<br>
+
+<img style="width: 643px; height: 386px;" alt="Cathedral reverberation time plot" src="cathedral_rt.GIF"><br>
+
+<h2><br>
+
+</h2>
+
+<h2>Absorption</h2>
+
+<br>
+
+The absorption coefficients for the ceiling, wall, floor, panel, and
+chalkboards are shown in the
+table below. &nbsp;Data were taken from several well known texts
+including Beranek's "Concert and Opera Halls" and Mehta's
+"Architectural Acoustics"<br>
+
+<table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="2">
+
+  <tbody>
+
+    <tr>
+
+      <td></td>
+
+      <td style="text-align: center;" colspan="6" rowspan="1"><big style="font-family: Helvetica,Arial,sans-serif;">Absorption
+Coefficient</big></td>
+
+    </tr>
+
+    <tr style="text-align: center;">
+
+      <td style="text-decoration: underline;">Material</td>
+      <td style=" text-decoration: underline;">125 Hz</td>
+      <td style=" text-decoration: underline;">250 Hz</td>
+      <td style=" text-decoration: underline;">500 Hz</td>
+      <td style="text-decoration: underline;">1 kHz</td>
+      <td style="text-decoration: underline;">2 kHz</td>
+      <td style="text-decoration: underline;">4 kHz</td>
+     </tr>
+
+    <tr style="text-align: center;">
+      <td>Brick (walls)</td>
+      <td style="text-align: center;">0.02</td>
+      <td style="text-align: center;">0.02</td>
+      <td style="text-align: center;">0.02</td>
+      <td style="text-align: center;">0.03</td>
+      <td style="text-align: center;">0.04</td>
+      <td style="text-align: center;">0.05</td>
+    </tr>
+
+    <tr style="text-align: center;">
+      <td>Plaster (walls/ceiling)</td>
+      <td>0.12</td>
+      <td>0.10</td>
+      <td>0.08</td>
+      <td>0.06</td>
+      <td>0.06</td>
+      <td>0.06</td>
+    </tr>
+
+    <tr style="text-align: center;">
+      <td>Hard Pews (70% of floor)</td>
+      <td>0.28</td>
+      <td>0.30</td>
+      <td>0.38</td>
+      <td>0.43</td>
+      <td>0.45</td>
+      <td>0.43</td>
+    </tr>
+
+
+
+  </tbody>
+</table>
+
+<br>
+
+<h2>Impulse Response</h2>
+
+<br>
+
+The impulse response for the room as computed by CATT is shown in the
+figure below. &nbsp; Notice that even this room does not have a
+perfect impulse for an impulse response. &nbsp;The small amount of
+reflection gives rise to a minor tail on the impulse respone.<br>
+
+<img style="width: 643px; height: 386px;" alt="impulse response of cathedral" src="cathedral_impulse.GIF"><br>
+
+<table>
+<tr>
+	<td>
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">
+		<img alt="Creative Commons License" style="border-width: 0" src="http://i.creativecommons.org/l/by-nc/2.5/88x31.png"/></a>
+	</td>
+	<td>
+		<div  id="links"> These animations, auralizations, and visualizations are © 2006 by 
+		Ralph T. Muehleisen and are licenced under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/2.5/">
+		Creative Commons Attribution-NonCommercial 2.5  License</a>.
+	</td>
+	</tr>
+</table>
+<!--/Creative Commons License--><!-- 
+<rdf:RDF xmlns="http://web.resource.org/cc/" 
+	xmlns:dc="http://purl.org/dc/elements/1.1/" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+	<Work rdf:about="">
+	<license rdf:resource="http://creativecommons.org/licenses/by-nc/2.5/" />
+	<dc:type rdf:resource="http://purl.org/dc/dcmitype/Sound" />
+	</Work>
+	<License rdf:about="http://creativecommons.org/licenses/by-nc/2.5/">
+	<permits rdf:resource="http://web.resource.org/cc/Reproduction"/>
+	<permits rdf:resource="http://web.resource.org/cc/Distribution"/>
+	<requires rdf:resource="http://web.resource.org/cc/Notice"/>
+	<requires rdf:resource="http://web.resource.org/cc/Attribution"/>
+	<prohibits rdf:resource="http://web.resource.org/cc/CommercialUse"/>
+	<permits rdf:resource="http://web.resource.org/cc/DerivativeWorks"/>
+	</License></rdf:RDF> -->
+<!--Creative Commons License-->
+
+</div>
+</body>
+</html>
