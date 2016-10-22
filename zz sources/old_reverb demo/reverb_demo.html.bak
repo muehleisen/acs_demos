@@ -1,0 +1,205 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Effects of Rooms on Voice and Music</title>
+<style type="text/css">
+    @charset "iso-8859-1";
+    body {
+    margin:0;
+    padding:0;
+    }
+    h1 {
+        font: Helvetica,Arial,sans-serif;
+    }
+    h2 {
+        font: bold 14px Verdana, Arial, Helvetica, sans-serif;
+        color: #000;
+        margin: 0px;
+        padding: 0px 0px 0px 15px;
+        }
+    /*- Menu Tabs--------------------------- */
+    #tabs {
+        float:left;
+        width:100%;
+        background:#BBD9EE;
+        font-size:90%;
+        line-height:normal;
+        font: bold 11px/1.5em Verdana; }
+        #tabs ul {
+        margin:0;
+        padding:10px 10px 0 50px;
+        list-style:none;
+    }
+    #tabs li {
+        display:inline;
+        margin:0;
+        padding:0;
+    }
+    #tabs a {
+        float:left;
+        background:url("tableft.gif") no-repeat left top;
+        margin:0;
+        padding:0 0 0 4px;
+        text-decoration:none;
+    }
+    #tabs a span {
+        float:left;
+        display:block;
+        background:url("tabright.gif") no-repeat right top;
+        padding:5px 15px 4px 6px;
+        color:#666;
+    }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #tabs a span {float:none;}
+    /* End IE5-Mac hack */
+    #tabs a:hover span {
+        color:#FF9834;
+    }
+    #tabs a:hover {
+        background-position:0% -42px;
+    }
+    #tabs a:hover span {
+        background-position:100% -42px;
+    }
+    #tabsJ {
+        font-family: Verdana;
+        float:left;
+        width:100%;
+        background:#F4F4F4;
+        background:#EEEEEE;
+        font-size:90%;
+        line-height:normal;
+        border-bottom:1px solid #24618E;
+    }
+    #tabsJ ul {
+        margin:0;
+        padding:10px 10px 0 10px;
+        list-style:none;
+    }
+    #tabsJ li {
+        display:inline;
+        margin:0;
+        padding:0;
+    }
+    #tabsJ a {
+        float:left;
+        background:url("tableftJ.gif") no-repeat left top;
+        margin:0;
+        padding:0 0 0 5px;
+        text-decoration:none;
+    }
+    #tabsJ a span {
+        float:left;
+        display:block;
+        background:url("tabrightJ.gif") no-repeat right top;
+        padding:5px 15px 4px 6px;
+        color:#24618E;
+    }
+    /* Commented Backslash Hack hides rule from IE5-Mac \*/
+    #tabsJ a span {float:none;}
+    /* End IE5-Mac hack */
+    #tabsJ a:hover span {
+        color:#FFF;
+    }
+    #tabsJ a:hover {
+        background-position:0% -42px;
+    }
+    #tabsJ a:hover span {
+        background-position:100% -42px;
+    }
+</style>
+</head>
+
+
+<body style="background-color: rgb(192, 192, 192); color: rgb(0, 0, 0); width: 680px;" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+
+<div id="tabsj">
+<ul>
+
+  <li style="margin-left: 142px; width: 0px;"><a class="tabj" href="../reverb_demo/reverb_demo.html" title="Reverb Demos"><span>Reverb
+Time</span></a></li>
+
+  <li><a href="../diffraction/diffraction.html" title="Diffraction"><span>Diffraction</span></a></li>
+
+  <li><a href="../room_modes/room_modes.html" title="Room Modes"><span>Room
+Modes</span></a></li>
+
+  <li><a href="../wave_animations/wave_animations.html" title="Wave Animations"><span>Wave
+Animations</span></a></li>
+
+  <li><a href="../TL_demo/tl.html" title="Transmission Loss"><span>Transmission
+Loss</span></a></li>
+
+</ul>
+
+</div>
+
+    <div align="center"><h1>Effects of Rooms on Voice and Music</h1></div>
+
+This page is designed to show you how a room affects the sound of voice and music.  Below you will find a number of different music and speech samples as they would sound in different environments.  For example, to compare speech in several environments you would click on the links in the column labeled Speech.<p>
+
+<H3> Warning!  While the samples are in .mp3 format, some of them are still quite large files (>500k) which might take a while to load</h3>
+
+
+
+
+<table width="640" border="0" cellspacing="0" cellpadding="5"  align="center">
+    <tr>
+        <th width="150" align="center">Speech</th>
+        <th width="150" align="center">Solo Piano</th>
+        <th width="150" align="center">Organ</th>
+    </tr>
+    <tr>
+        <td width="150" align="center"><a href="speech_anech.mp3">Anechoic Room</a></td>
+        <td width="150" align="center"><a href="piano_anech.mp3">Anechoic Room</a></td>
+        <td width="150" align="center"><a href="organ_anech.mp3">Anechoic Room</a></td>
+    </tr>
+    <tr>
+        <td  width="150" align="center"><a href="speech_aud.mp3">Auditorium</a></td>
+        <td width="150" align="center"><a href="piano_aud.mp3">Auditorium</a></td>
+        <td width="150" align="center"><a href="organ_aud.mp3">Auditorium</a></td>
+    </tr>
+    <tr>
+        <td width="150" align="center"><a href="speech_concert.mp3">Recital Hall</a></td>
+        <td width="150" align="center"><a href="piano_concert.mp3">Recital Hall</a></td>
+        <td width="150" align="center"><a href="organ_concert.mp3">Recital Hall</a></td>
+    </tr>
+
+    <tr>
+        <td width="150" align="center"><a href="speech_cathedral.mp3">Cathedral</a></td>
+        <td width="150" align="center"><a href="piano_cathedral.mp3">Cathedral</a></td>
+        <td width="150" align="center"><a href="organ_cathedral.mp3">Cathedral</a></td>
+    </tr>
+</table>
+
+
+<div align="center"><h2><a href="rooms.html">Description of the Different Rooms</a></h2></div>
+<div align="center"><h2><a href="sounds.html">Description of the Different Sounds</a></h2></div>
+<div align="center"><h2><a href="creation.html">Description of how the samples were created</a></h2></div>
+
+<br>
+This demonstration was
+created by Prof. Ralph Muehleisen.<br>
+
+You can email Prof. Muehleisen at:
+<script language="JavaScript"><!--
+var name = "muehleisen";
+var domain = "iit.edu";
+document.write('<a href=\"mailto:' + name + '@' + domain + '\">');
+document.write(name + '@' + domain + '</a>');
+// --></script>
+
+<br>
+<h3> Links:</h3>
+    <A HREF="http://acoustics.iit.edu/muehleisen">Ralph Muehleisen's Home Page</A><br>
+    <A HREF="http://www.iit.edu/~ce">CAE Home Page</A><br>
+     <A HREF="http://www.iit.edu">IIT</A></LI><br>
+<p>
+<hr>
+
+last updated on 05-MAR-2004
+
+</body>
+</html>
